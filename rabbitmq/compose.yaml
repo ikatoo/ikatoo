@@ -18,7 +18,15 @@ services:
     links:
       - rabbitmq-db:${DB_HOST_NAME}
     ports:
-      - 8081:8081
+      - ${MONGOEXPRESS_PORT}:8081
+    depends_on:
+      - rabbitmq-db
+    deploy:
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+        window: 3s
     environment:
       ME_CONFIG_OPTIONS_EDITORTHEME: "ambience"
       ME_CONFIG_MONGODB_SERVER: ${DB_HOST_NAME}
