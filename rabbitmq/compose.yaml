@@ -3,8 +3,6 @@ services:
   rabbitmq-db:
     image: mongo
     container_name: rabbitmq-db
-    ports:
-      - 27017:27017
     volumes:
       - ./mongo_data:/data/db
     environment:
