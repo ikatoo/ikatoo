@@ -21,6 +21,11 @@ services:
     ports:
       - ${ADMINER_PORT}:8080
 
+  mail:
+    image: dockage/mailcatcher:0.8.2
+    ports:
+      - ${MAIL_ADMIN_PORT}:1080
+
   keycloak:
     container_name: keycloak
     build:
@@ -36,6 +41,7 @@ services:
       KEYCLOAK_ADMIN_PASSWORD: ${KEYCLOAK_ADMIN_PASSWORD}
     links:
       - keycloak-db:${DB_HOST_NAME}
+      - mail
     depends_on:
       - keycloak-db
     ports:
