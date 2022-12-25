@@ -1,0 +1,12 @@
+coverage/**/*
+*.drawio.bkp
+node_modules/**/*
+*.drawio.dtmp
+.env
+.env.dev
+.env.test
+.env.production
+.env.development
+dist/**/*
+sqlite.db
+fly.toml
