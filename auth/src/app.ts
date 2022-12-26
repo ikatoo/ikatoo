@@ -1,6 +1,6 @@
 import 'express-async-errors'
 
-import express, { Request, Response } from 'express'
+import express, { NextFunction, Request, Response } from 'express'
 
 import cors, { CorsOptions } from 'cors'
 import { errorMiddleware } from './middlewares/error'
@@ -49,6 +49,11 @@ app.get('/', (_req: Request, res: Response) => {
 })
 // Protected Route Example
 app.get('/admin', keycloak.protect(), (_req: Request, res: Response) => {
+  res.status(200).send('OK')
+})
+app.get('/user/:username', (req: Request, res: Response, next: NextFunction) => {
+  keycloak.protect(`realm:${req.params.username}`)(req, res, next)
+}, (_req: Request, res: Response) => {
   res.status(200).send('OK')
 })
 
