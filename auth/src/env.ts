@@ -6,5 +6,5 @@ dotenv.config({
 
 export const env = (key: string) => {
   if (process.env[key] === undefined) console.error(`*** ${key} IS UNDEFINED. ***`)
-  return `${process.env[key] ?? ''}`
+  return process.env[key] ?? ''
 }
