@@ -51,13 +51,13 @@ Milton Carlos Katoo personal website
 backend
 └── auth
     ├── .env
-    ├── .env.example
+    └── .env.example
 frontend
 ├── .env
-├── .env.example
+└── .env.example
 keycloak
 ├── .env
-├── .env-example
+└── .env-example
 
 <br />
 1. Run `docker compose up -d --build` on keycloak directory<br />
