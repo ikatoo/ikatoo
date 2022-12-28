@@ -48,15 +48,21 @@ Milton Carlos Katoo personal website
 ## Usage
 
 1. Create env files based on .env.example files.
-├── auth
-│   ├── .env
-│   ├── .env-example
-├── keycloak
-│   ├── .env
-│   ├── .env-example
+backend
+└── auth
+    ├── .env
+    ├── .env.example
+frontend
+├── .env
+├── .env.example
+keycloak
+├── .env
+├── .env-example
+
 <br />
 1. Run `docker compose up -d --build` on keycloak directory<br />
-2. Run `yarn install && yarn start` on auth directory and access `http://localhost:3000`.<br />
+2. Run `yarn install && yarn start|dev` on backend/auth directory and access `http://localhost:3000`.<br />
+2. Run `yarn install && yarn dev` on frontend directory and access `http://localhost:5173`.<br />
 
 ## Contributing
 
