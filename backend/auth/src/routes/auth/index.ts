@@ -55,4 +55,11 @@ authRoute.post('/', async (req: Request, res: Response) => {
   }
 })
 
+authRoute.get('/github/:redirectUri?', async (req: Request, res: Response) => {
+  const redirectUri = req.params.redirectUri ?? 'http://localhost:3000'
+  const url = `${env.KC_AUTH_SERVER_URL}/realms/${env.KC_REALM}/protocol/${env.KC_PROTOCOL}/auth?client_id=${env.KC_CLIENT_ID}&redirect_uri=${redirectUri}&response_type=code&scope=openid&kc_idp_hint=github`
+
+  res.redirect(url)
+})
+
 export default authRoute
