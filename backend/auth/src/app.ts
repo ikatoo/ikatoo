@@ -49,7 +49,7 @@ app.get('/', (_req: Request, res: Response) => {
 })
 // Protected Route Example
 app.get('/admin', keycloak.protect(), (_req: Request, res: Response) => {
-  res.status(200).send('OK')
+  res.status(200).send('ADMIN')
 })
 app.get('/user/:username', (req: Request, res: Response, next: NextFunction) => {
   keycloak.protect(`realm:${req.params.username}`)(req, res, next)
