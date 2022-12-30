@@ -4,10 +4,10 @@ import express, { NextFunction, Request, Response } from 'express'
 
 import cors, { CorsOptions } from 'cors'
 import { errorMiddleware } from './middlewares/error'
-import { env } from './env'
 import keycloak, { memoryStore } from './keycloak'
 import session from 'express-session'
 import routes from './routes'
+import env from './env'
 
 const app = express()
 app.use(express.json())
@@ -27,7 +27,7 @@ app.use(keycloak.middleware({
   admin: '/'
 }))
 
-if (env('NODE_ENV').includes('prod')) {
+if (env.NODE_ENV.includes('prod')) {
   const corsOptions: CorsOptions = {
     origin: /ikatoo\.com\.br$/,
     methods: 'GET,PUT,PATCH,POST,DELETE'
