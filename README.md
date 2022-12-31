@@ -50,11 +50,11 @@ Milton Carlos Katoo personal website
 1. Create env files based on .env.example files.
 backend
 └── auth
-    ├── .env
-    └── .env.example
+    ├── .env.test
+    └── .env.test-example
 frontend
 ├── .env
-└── .env.example
+└── .env-example
 keycloak
 ├── .env
 └── .env-example
