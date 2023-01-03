@@ -12,6 +12,7 @@ const env = (key: string) => {
 export default {
   NODE_ENV: env('NODE_ENV'),
   PORT: env('PORT'),
+  HOST: env('HOST'),
   KC_AUTH_SERVER_URL: env('KC_AUTH_SERVER_URL'),
   KC_CLIENT_ID: env('KC_CLIENT_ID'),
   KC_CLIENT_SECRET: env('KC_CLIENT_SECRET'),
