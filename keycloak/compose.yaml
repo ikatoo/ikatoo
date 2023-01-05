@@ -39,6 +39,8 @@ services:
     environment:
       KEYCLOAK_ADMIN: ${KEYCLOAK_ADMIN_USER}
       KEYCLOAK_ADMIN_PASSWORD: ${KEYCLOAK_ADMIN_PASSWORD}
+    volumes:
+      - ./themes:/opt/keycloak/themes
     links:
       - keycloak-db:${DB_HOST_NAME}
       - mail
