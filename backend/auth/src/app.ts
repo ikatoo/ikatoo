@@ -8,12 +8,13 @@ import keycloak, { memoryStore } from './keycloak'
 import session from 'express-session'
 import routes from './routes'
 import env from './env'
+import { randomBytes } from 'crypto'
 
 const app = express()
 app.use(express.json())
 
 app.use(session({
-  secret: '1234567890',
+  secret: randomBytes(32).toString('hex'),
   resave: false,
   saveUninitialized: true,
   store: memoryStore,
