@@ -7,13 +7,13 @@
 
 .login-pf body {
     background: none;
-    background-color: #00032C;
+    background-color: #00032c;
     background-size: cover;
     height: 100%;
 }
 
 textarea.pf-c-form-control {
-	height: auto;
+    height: auto;
 }
 
 .pf-c-alert__title {
@@ -41,12 +41,12 @@ h1#kc-page-title {
     padding: 0;
 }
 
-#kc-locale-dropdown{
+#kc-locale-dropdown {
     display: inline-block;
 }
 
 #kc-locale-dropdown:hover ul {
-    display:block;
+    display: block;
 }
 
 #kc-locale-dropdown a {
@@ -57,7 +57,7 @@ h1#kc-page-title {
 
 a#kc-current-locale-link::after {
     content: "\2c5";
-    margin-left: var(--pf-global--spacer--xs)
+    margin-left: var(--pf-global--spacer--xs);
 }
 
 .login-pf .container {
@@ -112,7 +112,7 @@ div.kc-logo-text span {
 
 #kc-username {
     text-align: center;
-    margin-bottom:-10px;
+    margin-bottom: -10px;
 }
 
 #kc-webauthn-settings-form {
@@ -163,7 +163,7 @@ div.kc-logo-text span {
 #kc-info-wrapper {
     font-size: 13px;
     padding: 15px 35px;
-    background-color: #F0F0F0;
+    background-color: #f0f0f0;
 }
 
 #kc-form-options span {
@@ -205,8 +205,8 @@ ul#kc-totp-supported-apps {
 }
 
 #kc-totp-secret-qr-code {
-    max-width:150px;
-    max-height:150px;
+    max-width: 150px;
+    max-height: 150px;
 }
 
 #kc-totp-secret-key {
@@ -281,7 +281,7 @@ ul#kc-totp-supported-apps {
 }
 
 .kc-social-grid {
-    display:grid;
+    display: grid;
     grid-column-gap: 10px;
     grid-row-gap: 5px;
     grid-column-end: span 6;
@@ -301,32 +301,32 @@ ul#kc-totp-supported-apps {
     text-align: center;
 }
 
-.kc-social-section hr{
-    margin-bottom: 10px
+.kc-social-section hr {
+    margin-bottom: 10px;
 }
 
-.kc-login-tooltip .kc-tooltip-text{
-    top:-3px;
-    left:160%;
+.kc-login-tooltip .kc-tooltip-text {
+    top: -3px;
+    left: 160%;
     background-color: black;
     visibility: hidden;
     color: #fff;
 
-    min-width:130px;
+    min-width: 130px;
     text-align: center;
     border-radius: 2px;
-    box-shadow:0 1px 8px rgba(0,0,0,0.6);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.6);
     padding: 5px;
 
     position: absolute;
-    opacity:0;
-    transition:opacity 0.5s;
+    opacity: 0;
+    transition: opacity 0.5s;
 }
 
 /* Show tooltip */
 .kc-login-tooltip:hover .kc-tooltip-text {
     visibility: visible;
-    opacity:0.7;
+    opacity: 0.7;
 }
 
 /* Arrow for tooltip */
@@ -359,7 +359,6 @@ ul#kc-totp-supported-apps {
 }
 
 @media (max-width: 767px) {
-
     .login-pf body {
         background: white;
     }
@@ -438,13 +437,13 @@ ul#kc-totp-supported-apps {
     width: 40%;
 }
 
-.select-auth-box-arrow{
+.select-auth-box-arrow {
     display: flex;
     align-items: center;
     margin-right: 2rem;
 }
 
-.select-auth-box-icon{
+.select-auth-box-icon {
     display: flex;
     flex: 0 0 2em;
     justify-content: center;
@@ -452,14 +451,14 @@ ul#kc-totp-supported-apps {
     margin-left: 3rem;
 }
 
-.select-auth-box-parent{
+.select-auth-box-parent {
     border-top: 1px solid var(--pf-global--palette--black-200);
     padding-top: 1rem;
     padding-bottom: 1rem;
     cursor: pointer;
 }
 
-.select-auth-box-parent:hover{
+.select-auth-box-parent:hover {
     background-color: #f7f8f8;
 }
 
@@ -542,7 +541,7 @@ ul#kc-totp-supported-apps {
 #kc-form-login div.form-group:last-of-type,
 #kc-register-form div.form-group:last-of-type,
 #kc-update-profile-form div.form-group:last-of-type,
-#kc-update-email-form div.form-group:last-of-type{
+#kc-update-email-form div.form-group:last-of-type {
     margin-bottom: 0px;
 }
 
@@ -566,14 +565,14 @@ ul#kc-totp-supported-apps {
     columns: 2;
     margin: 16px 0;
     padding: 16px 16px 8px 16px;
-    border: 1px solid #D2D2D2;
+    border: 1px solid #d2d2d2;
 }
 .kc-recovery-codes-list li {
     margin-bottom: 8px;
     font-size: 11px;
 }
 .kc-recovery-codes-list li span {
-    color: #6A6E73;
+    color: #6a6e73;
     width: 16px;
     text-align: right;
     display: inline-block;
@@ -595,3 +594,72 @@ ul#kc-totp-supported-apps {
     margin-bottom: 16px;
 }
 /* End Recovery codes */
+
+/* Custom Classes */
+
+body {
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+    line-height: inherit;
+    display: flex;
+    overflow-y: hidden;
+    background-color: rgb(0 3 44);
+    font-family: Open Sans, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    color: rgb(156 163 175);
+}
+
+.root {
+    display: flex;
+    height: 100%;
+    min-height: 100vh;
+    width: 100vw;
+    min-width: 100%;
+}
+
+.login-pf-page {
+    padding: 0;
+    margin: auto;
+}
+
+.form-group {
+    line-height: initial;
+}
+
+#kc-header-wrapper {
+    letter-spacing: initial;
+    text-transform: capitalize;
+    padding: 0;
+}
+
+a {
+    color: #08fdd8;
+    text-decoration: none;
+}
+
+.login-pf-page .login-pf-page-header p {
+    margin: 0;
+}
+
+.text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.text-gray-500 {
+    color: rgb(107 114 128);
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+span {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: rgb(107 114 128);
+}
