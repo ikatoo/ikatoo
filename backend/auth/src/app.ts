@@ -6,7 +6,6 @@ import cors, { CorsOptions } from 'cors'
 import { errorMiddleware } from './middlewares/error'
 import keycloak, { memoryStore } from './keycloak'
 import session from 'express-session'
-import routes from './routes'
 import env from './env'
 import { randomBytes } from 'crypto'
 
@@ -25,7 +24,7 @@ app.use(session({
 
 app.use(keycloak.middleware({
   logout: '/sign-out',
-  admin: '/'
+  admin: '/admin'
 }))
 
 if (env.NODE_ENV.includes('prod')) {
@@ -42,21 +41,24 @@ app.use(express.urlencoded({ extended: true }))
 
 app.disable('x-powered-by').disable('etag')
 
-app.use(routes)
-
 // Status
 app.get('/', (_req: Request, res: Response) => {
   res.status(200).send('OK')
 })
+
 // Protected Route Example
 app.get('/admin', keycloak.protect(), (_req: Request, res: Response) => {
   res.status(200).send('ADMIN')
 })
-app.get('/user/:username', (req: Request, res: Response, next: NextFunction) => {
-  keycloak.protect(`realm:${req.params.username}`)(req, res, next)
+app.get('/role/:role', (req: Request, res: Response, next: NextFunction) => {
+  keycloak.protect(`realm:${req.params.role}`)(req, res, next)
 }, (_req: Request, res: Response) => {
-  res.status(200).send('OK')
+  res.status(200).send('Role OK')
 })
+// app.get('/user/:user', keycloak.enforcer('user:profile'), (req, res) => {
+//   res.send('User OK')
+// })
+// End Protected Route Example
 
 // Error Handling
 app.use(errorMiddleware)
