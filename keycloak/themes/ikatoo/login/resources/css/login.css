@@ -359,15 +359,15 @@ ul#kc-totp-supported-apps {
 }
 
 @media (max-width: 767px) {
-    .login-pf body {
-        background: white;
-    }
+    /* .login-pf body { */
+    /*     background: white; */
+    /* } */
 
     #kc-header {
         padding-left: 15px;
         padding-right: 15px;
         float: none;
-        text-align: left;
+        /* text-align: left; */
     }
 
     #kc-header-wrapper {
@@ -627,7 +627,16 @@ body {
 }
 
 .form-group {
+    align-items: center;
+}
+
+#kc-form-options .checkbox {
+    margin: 0;
     line-height: initial;
+}
+
+.checkbox input[type=checkbox], .checkbox-inline input[type=checkbox], .radio input[type=radio], .radio-inline input[type=radio] {
+    margin-top: 2px;
 }
 
 #kc-header-wrapper {
