@@ -3,5 +3,7 @@
 !**/.env.example
 postgres_data
 mongo_data
+.*.bkp
+.*.dtmp
 
 # auth
