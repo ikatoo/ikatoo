@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   sodipodi:docname="ikatoo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:lockguides="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:zoom="1.8850449"
+     inkscape:cx="194.95557"
+     inkscape:cy="744.27935"
+     inkscape:window-width="1366"
+     inkscape:window-height="715"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#00021f;fill-opacity:1;stroke-width:0.0282247"
+       id="rect858"
+       width="39.115524"
+       height="15.300687"
+       x="21.300491"
+       y="179.94354"
+       inkscape:export-filename="\\wsl$\Arch\home\mckatoo\projects\ikatoo-frontend\public\logo.svg"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <g
+       id="g1052"
+       inkscape:export-filename="\\wsl$\Arch\home\mckatoo\projects\ikatoo-frontend\public\logo.svg"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <path
+         id="path3045-3"
+         style="font-size:10.5833px;line-height:1.25;fill:#ff2a2a;stroke-width:0.264583"
+         d="m 26.340845,182.83759 v 9.51259 h 1.783354 0.01757 0.429431 v -3.49022 h 0.02067 l 0.214457,-0.21032 3.233911,3.66643 h 2.703195 l -4.486548,-5.08651 4.486548,-4.39197 h -2.777609 l -3.394625,3.3233 v -3.3233 z" />
+      <path
+         d="m 24.842247,185.66378 v 5.78774 h -1.514114 v -4.62502 c 0.308037,-1.10869 0.938451,-1.03533 1.514114,-1.16272 z m 0,-2.81636 v 1.76733 h -1.514114 c -0.01679,-1.97933 -0.378694,-1.76733 1.514114,-1.76733 z"
+         id="path8151"
+         style="font-weight:bold;font-size:10.5833px;line-height:1.25;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Bold';fill:#b3b3b3;stroke-width:0.264583"
+         sodipodi:nodetypes="ccccccccc" />
+      <path
+         d="m 37.063684,188.73335 q -0.847491,0 -1.183386,0.21704 -0.335896,0.21704 -0.335896,0.74414 0,0.39274 0.232543,0.62528 0.232543,0.23254 0.63045,0.23254 0.599445,0 0.930173,-0.44958 0.330728,-0.45475 0.330728,-1.26607 v -0.10335 z m 2.108392,-0.58394 v 3.30211 h -1.50378 v -0.64595 q -0.273884,0.3824 -0.702797,0.58911 -0.428913,0.2067 -0.945676,0.2067 -0.987016,0 -1.539952,-0.52193 -0.547769,-0.52193 -0.547769,-1.45727 0,-1.01285 0.656289,-1.49344 0.656288,-0.48576 2.030877,-0.48576 h 1.049028 v -0.25321 q 0,-0.3669 -0.268716,-0.55294 -0.263549,-0.1912 -0.780312,-0.1912 -0.542601,0 -1.054196,0.13952 -0.506427,0.13436 -1.059363,0.43409 v -1.29191 q 0.50126,-0.20671 1.018022,-0.30489 0.516763,-0.0982 1.095537,-0.0982 1.410762,0 1.979201,0.57361 0.573607,0.57361 0.573607,2.05155 z"
+         id="path8155"
+         style="font-weight:bold;font-size:10.5833px;line-height:1.25;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Bold';fill:#b3b3b3;stroke-width:0.264583" />
+      <path
+         d="m 43.383692,184.02047 v 1.64331 h 1.979201 v 1.16272 h -1.979201 v 2.73884 c 0,0.25838 0.06201,0.44441 0.186034,0.5581 0.127469,0.11025 0.337619,0.16537 0.630451,0.16537 h 1.162716 v 1.16271 h -1.271236 c -0.868161,0 -1.455548,-0.1378 -1.762161,-0.41341 -0.306613,-0.27905 -0.459919,-0.79409 -0.459919,-1.54512 v -2.66649 h -1.477941 v -1.16272 h 1.477941 v -1.11414 c 0.07444,-0.53034 1.514115,-0.52917 1.514115,-0.52917 z"
+         id="path8157"
+         style="font-weight:bold;font-size:10.5833px;line-height:1.25;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Bold';fill:#b3b3b3;stroke-width:0.264583"
+         sodipodi:nodetypes="cccccscsccscscccccc" />
+      <path
+         d="m 49.372971,186.75415 q -0.542601,0 -0.852659,0.48059 -0.310057,0.47542 -0.310057,1.32808 0,0.85266 0.310057,1.33325 0.310058,0.47542 0.852659,0.47542 0.547768,0 0.857826,-0.47542 0.310057,-0.48059 0.310057,-1.33325 0,-0.85266 -0.310057,-1.32808 -0.310058,-0.48059 -0.857826,-0.48059 z m -2.676831,1.80867 q 0,-1.40043 0.723468,-2.21691 0.728635,-0.82166 1.953363,-0.82166 1.229895,0 1.953363,0.82166 0.728635,0.81648 0.728635,2.21691 0,1.40042 -0.728635,2.22208 -0.723468,0.81648 -1.953363,0.81648 -1.224728,0 -1.953363,-0.81648 -0.723468,-0.82166 -0.723468,-2.22208 z"
+         id="path8159"
+         style="font-weight:bold;font-size:10.5833px;line-height:1.25;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Bold';fill:#b3b3b3;stroke-width:0.264583" />
+      <path
+         d="m 55.744654,186.75415 q -0.542601,0 -0.852659,0.48059 -0.310057,0.47542 -0.310057,1.32808 0,0.85266 0.310057,1.33325 0.310058,0.47542 0.852659,0.47542 0.547768,0 0.857826,-0.47542 0.310057,-0.48059 0.310057,-1.33325 0,-0.85266 -0.310057,-1.32808 -0.310058,-0.48059 -0.857826,-0.48059 z m -2.676831,1.80867 q 0,-1.40043 0.723468,-2.21691 0.728635,-0.82166 1.953363,-0.82166 1.229895,0 1.953363,0.82166 0.728635,0.81648 0.728635,2.21691 0,1.40042 -0.728635,2.22208 -0.723468,0.81648 -1.953363,0.81648 -1.224728,0 -1.953363,-0.81648 -0.723468,-0.82166 -0.723468,-2.22208 z"
+         id="path8161"
+         style="font-weight:bold;font-size:10.5833px;line-height:1.25;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Bold';fill:#b3b3b3;stroke-width:0.264583" />
+    </g>
+    <rect
+       style="fill:#b3b3b3;stroke-width:0.189877"
+       id="rect850"
+       width="12.108368"
+       height="12.108368"
+       x="27.194202"
+       y="152.84332"
+       inkscape:export-filename="\\wsl$\Arch\home\mckatoo\projects\ikatoo-frontend\public\favicon.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       ry="0.7719754" />
+    <path
+       id="path932"
+       style="font-size:10.5833px;line-height:1.25;fill:#ff2a2a;stroke-width:0.264583"
+       d="m 29.047093,154.14121 v 9.51259 h 1.783354 0.01757 0.429431 v -3.49022 h 0.02067 l 0.214457,-0.21032 3.233911,3.66643 h 2.703195 l -4.486548,-5.08651 4.486548,-4.39197 h -2.777609 l -3.394625,3.3233 v -3.3233 z"
+       inkscape:export-filename="\\wsl$\Arch\home\mckatoo\projects\ikatoo-frontend\public\favicon.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+  </g>
+</svg>
