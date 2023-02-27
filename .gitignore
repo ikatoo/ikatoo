@@ -6,4 +6,6 @@ mongo_data
 .*.bkp
 .*.dtmp
 
+backend-about-page
+
 # auth

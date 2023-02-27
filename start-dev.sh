@@ -1,35 +1,51 @@
 #!/bin/bash
 
-DEFAULT_COLOR="\033[0m"
-GREEN="\033[0;32m"  
-        
-echo -e "${GREEN}-- Cleaning environment.${DEFAULT_COLOR}"
+source $(dirname "$0")/shell-colors.sh;
+
+echo -e "${LIGHT_GREEN}-- Cleaning environment.${DEFAULT_COLOR}"
 rm -rf frontend
 rm -rf frontend-dist
+rm -rf backend-about-page
 
-echo -e "${GREEN}-- Cloning dev branch from frontend repository.${DEFAULT_COLOR}"
+
+
+### BEGIN FRONTEND
+
+echo -e "${LIGHT_GREEN}-- Cloning dev branch from frontend repository.${DEFAULT_COLOR}"
 git clone --branch=dev https://github.com/ikatoo/frontend
 
-echo -e "${GREEN}-- Entering the frontend directory.${DEFAULT_COLOR}"
+echo -e "${LIGHT_GREEN}-- Entering the frontend directory.${DEFAULT_COLOR}"
 cd frontend
 
-echo -e "${GREEN}-- Copy env file from root to frontend.${DEFAULT_COLOR}"
+echo -e "${LIGHT_GREEN}-- Copy env file from root to frontend.${DEFAULT_COLOR}"
 cp ../.env .
 
-echo -e "${GREEN}-- Installing nodejs dependencies.${DEFAULT_COLOR}"
+echo -e "${LIGHT_GREEN}-- Installing nodejs dependencies.${DEFAULT_COLOR}"
 npm i
 
-echo -e "${GREEN}-- Building.${DEFAULT_COLOR}"
+echo -e "${LIGHT_GREEN}-- Building.${DEFAULT_COLOR}"
 npm run build
 
-echo -e "${GREEN}-- Move dist directory to root.${DEFAULT_COLOR}"
+echo -e "${LIGHT_GREEN}-- Move dist directory to root.${DEFAULT_COLOR}"
 mv dist ../frontend-dist
 
-echo -e "${GREEN}-- Return to the root.${DEFAULT_COLOR}"
+echo -e "${LIGHT_GREEN}-- Return to the root.${DEFAULT_COLOR}"
 cd ..
 
-echo -e "${GREEN}-- Remove frontend repository directory${DEFAULT_COLOR}"
+echo -e "${LIGHT_GREEN}-- Remove frontend repository directory${DEFAULT_COLOR}"
 rm -rf frontend
+### END FRONTEND
 
-echo -e "${GREEN}-- Docker compose up${DEFAULT_COLOR}"
-docker compose up -d
+
+
+### BEGIN ABOUT-PAGE BACKEND
+
+echo -e "${LIGHT_BLUE}-- Cloning dev branch from backend-about-page repository.${DEFAULT_COLOR}"
+git clone --branch=dev https://github.com/ikatoo/backend-about-page
+
+### END ABOUT-PAGE BACKEND
+
+
+
+echo -e "${YELLOW}-- Docker compose up${DEFAULT_COLOR}"
+docker compose up --build -d
