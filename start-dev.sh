@@ -2,7 +2,12 @@
 
 source $(dirname "$0")/shell-colors.sh;
 
-echo -e "${LIGHT_GREEN}-- Cleaning environment.${DEFAULT_COLOR}"
+if [[ ! -f .env ]]; then
+  print ${WHITE_ON_RED} "ENV FILE NOT EXIST."
+  exit 1
+fi
+
+print ${LIGHT_GREEN} "-- Cleaning environment."
 rm -rf frontend
 rm -rf frontend-dist
 rm -rf backend-about-page
@@ -11,28 +16,28 @@ rm -rf backend-about-page
 
 ### BEGIN FRONTEND
 
-echo -e "${LIGHT_GREEN}-- Cloning dev branch from frontend repository.${DEFAULT_COLOR}"
+print ${LIGHT_GREEN} "-- Cloning dev branch from frontend repository."
 git clone --branch=dev https://github.com/ikatoo/frontend
 
-echo -e "${LIGHT_GREEN}-- Entering the frontend directory.${DEFAULT_COLOR}"
+print ${LIGHT_GREEN} "-- Entering the frontend directory."
 cd frontend
 
-echo -e "${LIGHT_GREEN}-- Copy env file from root to frontend.${DEFAULT_COLOR}"
+print ${LIGHT_GREEN} "-- Copy env file from root to frontend."
 cp ../.env .
 
-echo -e "${LIGHT_GREEN}-- Installing nodejs dependencies.${DEFAULT_COLOR}"
+print ${LIGHT_GREEN} "-- Installing nodejs dependencies."
 npm i
 
-echo -e "${LIGHT_GREEN}-- Building.${DEFAULT_COLOR}"
+print ${LIGHT_GREEN} "-- Building."
 npm run build
 
-echo -e "${LIGHT_GREEN}-- Move dist directory to root.${DEFAULT_COLOR}"
+print ${LIGHT_GREEN} "-- Move dist directory to root."
 mv dist ../frontend-dist
 
-echo -e "${LIGHT_GREEN}-- Return to the root.${DEFAULT_COLOR}"
+print ${LIGHT_GREEN} "-- Return to the root."
 cd ..
 
-echo -e "${LIGHT_GREEN}-- Remove frontend repository directory${DEFAULT_COLOR}"
+print ${LIGHT_GREEN} "-- Remove frontend repository directory"
 rm -rf frontend
 ### END FRONTEND
 
@@ -40,12 +45,14 @@ rm -rf frontend
 
 ### BEGIN ABOUT-PAGE BACKEND
 
-echo -e "${LIGHT_BLUE}-- Cloning dev branch from backend-about-page repository.${DEFAULT_COLOR}"
+print ${LIGHT_BLUE} "-- Cloning dev branch from backend-about-page repository."
 git clone --branch=dev https://github.com/ikatoo/backend-about-page
 
 ### END ABOUT-PAGE BACKEND
 
 
 
-echo -e "${YELLOW}-- Docker compose up${DEFAULT_COLOR}"
+print ${YELLOW} "-- Docker compose up"
 docker compose up --build -d
+
+exit 0
