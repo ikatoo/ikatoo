@@ -1,6 +1,6 @@
 **/.env
-**/.env.*
 !**/.env.example
+**/.env.*
 postgres_data
 mongo_data
 .*.bkp
