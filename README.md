@@ -19,7 +19,7 @@ Milton Carlos Katoo personal website
 ## Participants
 
 | [<img src="https://avatars.githubusercontent.com/u/7876852?v=4" width="75px;"/>](https://github.com/mckatoo) |
-| :------------------------------------------------------------------------------------------------------------------------: |
+| :--------------------------: |
 
 
 | [Milton Carlos Katoo](https://github.com/mckatoo)
@@ -28,9 +28,8 @@ Milton Carlos Katoo personal website
 
 ### Infra
   - [x] Docker
-  - [x] Keycloak
   - [x] Postgres
-  - [X] RabbitMQ
+  - [X] Kong
   - [ ] MongoDB
 
 ### Languages and Frameworks
@@ -47,26 +46,15 @@ Milton Carlos Katoo personal website
 
 ## Usage
 
-1. Create env files based on .env.example files.
-backend
-└── auth
-    ├── .env.test
-    └── .env.test-example
-frontend
-├── .env
-└── .env-example
-keycloak
-├── .env
-└── .env-example
-
-<br />
-1. Run `docker compose up -d --build` on keycloak directory<br />
-2. Run `yarn install && yarn start|dev` on backend/auth directory and access `http://localhost:3000`.<br />
-2. Run `yarn install && yarn dev` on frontend directory and access `http://localhost:5173`.<br />
+1. Create env files based on .env.example file.
+```console
+cp .env.example .env
+```
+2. Run `./start-dev.sh`<br />
 
 ## Contributing
 
-1. Fork it ( https://github.com/mckatoo/ikatoo/fork )
+1. Fork it ( https://github.com/ikatoo/ikatoo/fork )
 2. Create your feature branch (git checkout -b my-new-feature)
 3. Commit your changes (git commit -am 'Add some feature')
 4. Push to the branch (git push origin my-new-feature)
