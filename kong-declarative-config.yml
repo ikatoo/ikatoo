@@ -1,0 +1,15 @@
+_format_version: "2.1"
+
+services:
+  - name: about-page-service
+    url: http://about-page-api:8002/about
+    routes:
+      - name: about-page-api
+        paths: [/about]
+        plugins:
+          - name: rate-limiting
+            config:
+              second: 3
+              minute: 5
+              hour: 10
+              policy: local
