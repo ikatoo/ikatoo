@@ -9,4 +9,5 @@ mongo_data
 backend?*
 frontend?*
 
-# auth
+#kong
+kong-declarative-config.yml
